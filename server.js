@@ -27,6 +27,7 @@ const upload = multer({
 const app = express()
 app.use(express.json())
 app.use('/uploads', express.static(uploadDir))
+app.get('/', (_, res) => res.json({ status: 'ok', service: 'meta-certificate-api' }))
 app.get('/api/certificates', (_, res) => res.json(db.prepare('SELECT * FROM certificates ORDER BY id DESC').all()))
 app.get('/api/certificates/:id', (req, res) => {
   const item = db.prepare('SELECT * FROM certificates WHERE id = ?').get(req.params.id)
