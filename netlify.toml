@@ -6,11 +6,13 @@
   from = "/api/*"
   to = "https://meta-certificate.onrender.com/api/:splat"
   status = 200
+  force = true
 
 [[redirects]]
   from = "/uploads/*"
   to = "https://meta-certificate.onrender.com/uploads/:splat"
   status = 200
+  force = true
 
 [[redirects]]
   from = "/*"
