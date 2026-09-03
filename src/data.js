@@ -1,4 +1,16 @@
-export const certificates = []
+export const certificates = [
+  {
+    id: 1,
+    title: 'Frontend Developer',
+    organization: 'Meta IT School',
+    date: '2026',
+    category: 'Frontend',
+    pdf: '/certificates/frontend-developer.png',
+    thumbnail: '/certificates/frontend-developer.png',
+    accent: 'cyan',
+    mark: 'F',
+  },
+]
 
 export const skills = [
   ['HTML', 'Semantic, accessible structure', '◈'],
